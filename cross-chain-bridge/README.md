@@ -1,25 +1,26 @@
-# Cross-Chain Bridge (Mockup)
+# Cross-Chain Bridge Mockup
 
-A self-learning Solidity project simulating a basic cross-chain bridge architecture between two EVM-compatible blockchains. The project demonstrates locking, event emission, relayer-based validation, and token minting to simulate cross-chain ERC-20 transfers.
+A self-initiated project that explores cross-chain token transfers using a simulated ERC-20 bridging protocol. The project mimics fundamental behaviors of token bridges like mint/burn mechanics, lock/unlock flows, and event-driven syncing between mock EVM-compatible chains.
 
-## 🔗 Overview
+## 🚀 Features
 
-This mock bridge replicates the core logic behind real-world bridges like Polygon PoS or Multichain. Tokens are locked on the source chain, and transfer events are emitted for off-chain relayers. The relayer (simulated) triggers a mint on the destination chain, achieving a trust-minimized asset transfer.
+- **Bridge Contracts**: Lock and unlock ERC-20 tokens on the source chain
+- **Event Emission**: Emit transfer events for relayer-based tracking
+- **Mint-Burn Flow**: Mint tokens on the destination chain upon validation
+- **Access Control**: Only authorized relayers can mint or unlock
+- **Event Simulation**: Parse logs and simulate end-to-end bridge transfers
 
----
+## 🔧 Tech Stack
 
-## ⚙️ Features
+- **Solidity** for smart contracts
+- **Hardhat** for local development and testing
+- **Ethers.js** for off-chain interaction and log parsing
 
-- 🔒 **Lock & Emit**: Users lock ERC-20 tokens in the bridge contract which emits a `Locked` event.
-- 🧾 **Simulated Relayer**: Admin (bridge owner) reads the event off-chain and triggers minting on the destination.
-- 🔁 **Mint & Burn**: Mock token can be minted or burned with admin control to simulate bridging.
-- ✅ **Access Control**: Only admin can call `release`, ensuring trusted validation.
-
----
-
-## 🧪 Testing
-
-The project is fully tested using Hardhat:
+## 🧪 How to Run Locally
 
 ```bash
+git clone git@github.com:qabdurrahman/cross-chain-bridge.git
+cd cross-chain-bridge
+npm install
+npx hardhat compile
 npx hardhat test
