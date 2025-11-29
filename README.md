@@ -7,7 +7,7 @@ This repository contains my self-built cross-chain bridge prototype created as a
 
 ---
 
-## 🚀 Project Overview — Cross-Chain Bridge Mockup | Self Learning Project (July ’25)
+## 🚀 Project Overview — Cross-Chain Bridge Mockup | Self Learning Project
 
 Explored cross-chain token transfers and event-driven architecture using **Solidity**, **Foundry**, and **Ethers.js**.
 
