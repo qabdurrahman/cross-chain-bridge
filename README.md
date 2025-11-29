@@ -23,5 +23,3 @@ Explored cross-chain token transfers and event-driven architecture using **Solid
   - Cross-chain state consistency
 
 ---
-
-## 📁 Folder Structure
